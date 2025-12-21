@@ -1,4 +1,6 @@
-/* UPPCL Website - Complete CSS Styling */
+/* ========================================
+   UPPCL Website - Complete CSS Stylesheet
+   ======================================== */
 
 /* Reset & Base Styles */
 * {
@@ -14,7 +16,9 @@ body {
     background: #f4f4f4;
 }
 
-/* Navigation Bar Styling */
+/* ========================================
+   NAVIGATION BAR
+   ======================================== */
 .navbar {
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     color: white;
@@ -84,7 +88,9 @@ body {
     color: #1e3c72;
 }
 
-/* Login Section Styling */
+/* ========================================
+   LOGIN SECTION
+   ======================================== */
 .login-section {
     min-height: 80vh;
     display: flex;
@@ -110,7 +116,9 @@ body {
     font-size: 1.8rem;
 }
 
-/* Section Styling */
+/* ========================================
+   GENERAL SECTIONS
+   ======================================== */
 .section {
     padding: 4rem 2rem;
     background: white;
@@ -141,7 +149,9 @@ body {
     margin: 0 auto;
 }
 
-/* Form Elements Styling */
+/* ========================================
+   FORM STYLING
+   ======================================== */
 .form-group {
     margin-bottom: 1.5rem;
 }
@@ -171,7 +181,9 @@ body {
     border-color: #1e3c72;
 }
 
-/* Button Styling */
+/* ========================================
+   BUTTONS
+   ======================================== */
 button[type="submit"],
 .pay-btn {
     width: 100%;
@@ -192,7 +204,9 @@ button[type="submit"]:hover,
     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
 
-/* Links Styling */
+/* ========================================
+   LINKS
+   ======================================== */
 .links {
     margin-top: 1.5rem;
     display: flex;
@@ -209,7 +223,9 @@ button[type="submit"]:hover,
     text-decoration: underline;
 }
 
-/* Bill Information Section */
+/* ========================================
+   BILLING SECTION
+   ======================================== */
 .bill-info {
     margin-top: 2rem;
     padding: 1.5rem;
@@ -228,7 +244,9 @@ button[type="submit"]:hover,
     font-size: 1.1rem;
 }
 
-/* Updates Grid Layout */
+/* ========================================
+   UPDATES SECTION
+   ======================================== */
 .updates-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -259,7 +277,9 @@ button[type="submit"]:hover,
     line-height: 1.6;
 }
 
-/* Footer Styling */
+/* ========================================
+   FOOTER
+   ======================================== */
 footer {
     background: #1e3c72;
     color: white;
@@ -284,7 +304,9 @@ footer {
     color: #ffd700;
 }
 
-/* Responsive Design - Mobile & Tablet */
+/* ========================================
+   RESPONSIVE DESIGN - MOBILE & TABLET
+   ======================================== */
 @media (max-width: 768px) {
     .nav-container {
         flex-direction: column;
@@ -310,3 +332,7 @@ footer {
         gap: 0.5rem;
     }
 }
+
+/* ========================================
+   END OF STYLESHEET
+   ======================================== */
