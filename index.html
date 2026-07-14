@@ -1,184 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UPPCL - Uttar Pradesh Power Corporation Limited</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Engineer Junction — Training & Placement Portal</title>
+<meta name="description" content="The Engineer Junction connects students of every level — 10th Pass to PhD — with companies hiring for jobs, internships and training.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <img src="https://via.placeholder.com/50" alt="UPPCL Logo">
-                <span class="logo-text" data-en="UPPCL" data-hi="यूपीपीसीएल">UPPCL</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" data-en="Home" data-hi="होम">Home</a></li>
-                <li><a href="#billing" data-en="Billing" data-hi="बिलिंग">Billing</a></li>
-                <li><a href="#new-connection" data-en="New Connection" data-hi="नया कनेक्शन">New Connection</a></li>
-                <li><a href="#complaints" data-en="Complaints" data-hi="शिकायतें">Complaints</a></li>
-                <li><a href="#updates" data-en="Updates" data-hi="अपडेट">Updates</a></li>
-            </ul>
-            <button class="lang-toggle" id="langToggle">
-                <span id="langText">हिंदी</span>
-            </button>
-        </div>
-    </nav>
+<body class="grid-texture">
 
-    <!-- Login Section -->
-    <section id="home" class="login-section">
-        <div class="login-container">
-            <h2 data-en="Consumer Login" data-hi="उपभोक्ता लॉगिन">Consumer Login</h2>
-            <form id="loginForm">
-                <div class="form-group">
-                    <label data-en="Account Number" data-hi="खाता संख्या">Account Number</label>
-                    <input type="text" id="accountNumber" placeholder="Enter Account Number" required>
-                </div>
-                <div class="form-group">
-                    <label data-en="Password" data-hi="पासवर्ड">Password</label>
-                    <input type="password" id="password" placeholder="Enter Password" required>
-                </div>
-                <button type="submit" data-en="Login" data-hi="लॉगिन">Login</button>
-                <div class="links">
-                    <a href="#" data-en="Forgot Password?" data-hi="पासवर्ड भूल गए?">Forgot Password?</a>
-                    <a href="#" data-en="Register New User" data-hi="नया यूज़र रजिस्टर करें">Register New User</a>
-                </div>
-            </form>
-        </div>
-    </section>
+<header class="site-header">
+  <nav class="nav wrap">
+    <a href="index.html" class="brand">
+      <svg class="gear-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="3"/>
+        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+      </svg>
+      THE ENGINEER <span class="junction">JUNCTION</span>
+    </a>
+    <div class="nav-links">
+      <a href="#for-students">For Students</a>
+      <a href="#for-companies">For Companies</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="login.html?role=student" class="nav-cta">Login</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </nav>
+</header>
 
-    <!-- Billing Section -->
-    <section id="billing" class="section">
-        <div class="container">
-            <h2 data-en="View & Pay Bills" data-hi="बिल देखें और भुगतान करें">View & Pay Bills</h2>
-            <div class="card">
-                <form id="billingForm">
-                    <div class="form-group">
-                        <label data-en="Account Number" data-hi="खाता संख्या">Account Number</label>
-                        <input type="text" placeholder="Enter Account Number">
-                    </div>
-                    <button type="submit" data-en="View Bill" data-hi="बिल देखें">View Bill</button>
-                </form>
-                <div class="bill-info" style="display:none;">
-                    <h3 data-en="Current Bill Details" data-hi="वर्तमान बिल विवरण">Current Bill Details</h3>
-                    <p><strong data-en="Amount Due:" data-hi="देय राशि:">Amount Due:</strong> ₹1,250</p>
-                    <p><strong data-en="Due Date:" data-hi="अंतिम तिथि:">Due Date:</strong> 31st Dec 2025</p>
-                    <button class="pay-btn" data-en="Pay Now" data-hi="अभी भुगतान करें">Pay Now</button>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="hazard-stripe thin"></div>
 
-    <!-- New Connection Section -->
-    <section id="new-connection" class="section">
-        <div class="container">
-            <h2 data-en="Apply for New Connection" data-hi="नया कनेक्शन के लिए आवेदन करें">Apply for New Connection</h2>
-            <div class="card">
-                <form id="connectionForm">
-                    <div class="form-group">
-                        <label data-en="Full Name" data-hi="पूरा नाम">Full Name</label>
-                        <input type="text" required>
-                    </div>
-                    <div class="form-group">
-                        <label data-en="Mobile Number" data-hi="मोबाइल नंबर">Mobile Number</label>
-                        <input type="tel" required>
-                    </div>
-                    <div class="form-group">
-                        <label data-en="Address" data-hi="पता">Address</label>
-                        <textarea rows="3" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label data-en="Connection Type" data-hi="कनेक्शन प्रकार">Connection Type</label>
-                        <select required>
-                            <option value="">Select Type</option>
-                            <option value="domestic" data-en="Domestic" data-hi="घरेलू">Domestic</option>
-                            <option value="commercial" data-en="Commercial" data-hi="व्यावसायिक">Commercial</option>
-                            <option value="industrial" data-en="Industrial" data-hi="औद्योगिक">Industrial</option>
-                        </select>
-                    </div>
-                    <button type="submit" data-en="Submit Application" data-hi="आवेदन जमा करें">Submit Application</button>
-                </form>
-            </div>
-        </div>
-    </section>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <span class="hero-eyebrow">Training &amp; Placement Portal</span>
+    <h1>Where Every <span class="accent">Engineer</span><br>Meets Their Job</h1>
+    <p class="hero-sub">
+      From 10th Pass to PhD — one platform connects students of every stream with companies
+      hiring for jobs, internships and technical training.
+    </p>
+    <div class="hero-actions">
+      <a href="login.html?role=student" class="btn btn-primary">I'm a Student</a>
+      <a href="login.html?role=company" class="btn btn-outline">I'm a Company</a>
+    </div>
+  </div>
+</section>
 
-    <!-- Complaints Section -->
-    <section id="complaints" class="section">
-        <div class="container">
-            <h2 data-en="Register Complaint" data-hi="शिकायत दर्ज करें">Register Complaint</h2>
-            <div class="card">
-                <form id="complaintForm">
-                    <div class="form-group">
-                        <label data-en="Account Number" data-hi="खाता संख्या">Account Number</label>
-                        <input type="text" required>
-                    </div>
-                    <div class="form-group">
-                        <label data-en="Complaint Type" data-hi="शिकायत का प्रकार">Complaint Type</label>
-                        <select required>
-                            <option value="">Select Type</option>
-                            <option data-en="Power Outage" data-hi="बिजली गुल">Power Outage</option>
-                            <option data-en="Billing Issue" data-hi="बिल की समस्या">Billing Issue</option>
-                            <option data-en="Meter Problem" data-hi="मीटर की समस्या">Meter Problem</option>
-                            <option data-en="Other" data-hi="अन्य">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label data-en="Description" data-hi="विवरण">Description</label>
-                        <textarea rows="4" required></textarea>
-                    </div>
-                    <button type="submit" data-en="Submit Complaint" data-hi="शिकायत दर्ज करें">Submit Complaint</button>
-                </form>
-            </div>
-        </div>
-    </section>
+<div class="hazard-stripe"></div>
 
-    <!-- Important Updates Section -->
-    <section id="updates" class="section">
-        <div class="container">
-            <h2 data-en="Important Updates" data-hi="महत्वपूर्ण अपडेट">Important Updates</h2>
-            <div class="updates-grid">
-                <div class="update-card">
-                    <h3 data-en="Power Supply Schedule" data-hi="बिजली आपूर्ति कार्यक्रम">Power Supply Schedule</h3>
-                    <p data-en="Scheduled maintenance on 25th Dec 2025 from 10 AM to 2 PM in Sector 5." 
-                       data-hi="25 दिसंबर 2025 को सुबह 10 बजे से दोपहर 2 बजे तक सेक्टर 5 में रखरखाव कार्य।">
-                       Scheduled maintenance on 25th Dec 2025 from 10 AM to 2 PM in Sector 5.
-                    </p>
-                </div>
-                <div class="update-card">
-                    <h3 data-en="New Tariff Rates" data-hi="नई टैरिफ दरें">New Tariff Rates</h3>
-                    <p data-en="Revised electricity tariff rates effective from 1st Jan 2026." 
-                       data-hi="1 जनवरी 2026 से प्रभावी संशोधित बिजली टैरिफ दरें।">
-                       Revised electricity tariff rates effective from 1st Jan 2026.
-                    </p>
-                </div>
-                <div class="update-card">
-                    <h3 data-en="Online Payment Offer" data-hi="ऑनलाइन भुगतान ऑफर">Online Payment Offer</h3>
-                    <p data-en="Get 2% cashback on online bill payments this month!" 
-                       data-hi="इस महीने ऑनलाइन बिल भुगतान पर 2% कैशबैक पाएं!">
-                       Get 2% cashback on online bill payments this month!
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- STAT STRIP -->
+<section class="stat-strip">
+  <div class="wrap stat-grid">
+    <div>
+      <div class="stat-num">8+</div>
+      <div class="stat-label">Education Levels</div>
+    </div>
+    <div>
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Free for Students</div>
+    </div>
+    <div>
+      <div class="stat-num">24/7</div>
+      <div class="stat-label">Job Postings Open</div>
+    </div>
+    <div>
+      <div class="stat-num">1</div>
+      <div class="stat-label">Junction, All Engineers</div>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p data-en="© 2025 UPPCL. All Rights Reserved." data-hi="© 2025 यूपीपीसीएल। सर्वाधिकार सुरक्षित।">
-                © 2025 UPPCL. All Rights Reserved.
-            </p>
-            <div class="footer-links">
-                <a href="#" data-en="Privacy Policy" data-hi="गोपनीयता नीति">Privacy Policy</a>
-                <a href="#" data-en="Terms & Conditions" data-hi="नियम और शर्तें">Terms & Conditions</a>
-                <a href="#" data-en="Contact Us" data-hi="संपर्क करें">Contact Us</a>
-            </div>
-        </div>
-    </footer>
+<!-- JUNCTION: STUDENT / COMPANY -->
+<section class="junction" id="junction">
+  <div class="wrap">
+    <div class="section-heading">
+      <div class="section-tag">Choose Your Path</div>
+      <h2>Two Sides, One Junction</h2>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="split-grid">
+      <div class="connector">S · C</div>
+
+      <div class="node-card" id="for-students">
+        <svg class="node-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M22 10L12 5 2 10l10 5 10-5z"/>
+          <path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/>
+        </svg>
+        <h3>For Students</h3>
+        <p>Build your profile, browse jobs and internships matched to your qualification, and apply directly.</p>
+        <select aria-label="Select your qualification">
+          <option value="">Select your qualification</option>
+          <option value="10th">10th Pass</option>
+          <option value="12th">12th Pass</option>
+          <option value="iti">ITI</option>
+          <option value="diploma">Diploma</option>
+          <option value="btech">B.Tech</option>
+          <option value="other-grad">Other Graduation</option>
+          <option value="pg">Post Graduation</option>
+          <option value="phd">PhD</option>
+        </select>
+        <a href="login.html?role=student" class="btn btn-primary">Continue as Student</a>
+      </div>
+
+      <div class="node-card" id="for-companies">
+        <svg class="node-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <rect x="3" y="7" width="18" height="13" rx="1"/>
+          <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+          <path d="M3 12h18"/>
+        </svg>
+        <h3>For Companies</h3>
+        <p>Post openings, reach engineers across every qualification level, and manage applicants in one place.</p>
+        <p style="margin-top:-8px;">Hiring for jobs, internships or on-the-job training — post it here.</p>
+        <a href="login.html?role=company" class="btn btn-primary">Continue as Company</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hazard-stripe thin"></div>
+
+<!-- HOW IT WORKS -->
+<section class="how-it-works" id="how-it-works">
+  <div class="wrap">
+    <div class="section-heading">
+      <div class="section-tag">Simple Process</div>
+      <h2>How It Works</h2>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h4>Create Your Account</h4>
+        <p>Sign up as a student or a company in under two minutes. No fee, no middlemen.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h4>Build or Post</h4>
+        <p>Students complete their profile. Companies post job and internship openings.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h4>Connect Directly</h4>
+        <p>Students apply, companies review applicants — straight from the dashboard.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-brand">The Engineer Junction</div>
+  <div class="footer-note">Built for every engineer, from 10th pass to PhD.</div>
+</footer>
+
 </body>
 </html>
-
